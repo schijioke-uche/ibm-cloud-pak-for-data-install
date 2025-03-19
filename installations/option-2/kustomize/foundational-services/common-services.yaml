@@ -1,0 +1,16 @@
+apiVersion: operator.ibm.com/v1
+kind: CommonService
+metadata:
+  name: common-service
+  namespace: ${PROJECT_CPD_INST_OPERATORS}
+spec:
+  size: small
+  services:
+    - name: ibm-cert-manager
+      enabled: true
+    - name: ibm-licensing
+      enabled: true
+    - name: ibm-scheduling-service
+      enabled: true
+  license:
+    accept: true

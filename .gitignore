@@ -1,0 +1,9 @@
+cpd-cli-workspace/
+
+entitlement_key.txt
+
+ocp_url.txt
+
+ocp_token.txt
+
+cpd_vars.sh

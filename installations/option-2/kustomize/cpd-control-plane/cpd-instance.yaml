@@ -1,0 +1,12 @@
+apiVersion: cpd.ibm.com/v1
+kind: CPDInstance
+metadata:
+  name: cpd-instance
+  namespace: ${PROJECT_CPD_INST_OPERANDS}
+spec:
+  storageClass:
+    blockStorageClass: ${STG_CLASS_BLOCK}
+    fileStorageClass: ${STG_CLASS_FILE}
+  license:
+    accept: true
+  version: "4.8.0"
